@@ -89,11 +89,15 @@ textarea {
    .content-wrapper {
     outline: 3px dotted red;
     width: 90%;
+    margin: 50px 0;
    }
+
    /* Base header - footer styles*/
+
    header {
     display: flex;
     justify-content: center;
+    padding: 15px 0;
    }
 
    header.content-wrapper {
@@ -102,10 +106,23 @@ textarea {
    align-items: center;
    justify-content: space-around;
    flex-flow: row wrap;
+   margin: 0;
    }
+
+   .header-divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+  }
+
+  header nav {
+    width: 60%;
+  }
 
    header nav ul {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
    }
 
    footer {
@@ -113,6 +130,18 @@ textarea {
    flex-direction: column;
    align-items: center;
    text-align: center;
+   }
+
+   footer p {
+   margin: 0;
+   }
+
+   footer .content-wrapper {
+    width: 55%;
+   }
+
+   footer .contact {
+    margin-bottom: 50px;
    }
 
    footer .social-icons {
@@ -127,22 +156,38 @@ textarea {
    align-items: center;
    }
 
+   footer .copyright {
+    margin: 20px 0;
+   }
+
    /*Mobile styles - Homepage*/
 
    .hero-area {
     display: flex;
     justify-content: center;
    }
+
    /*Aside*/
+
    aside {
     display: flex;
     justify-content: center;
    } 
 
    /*Features*/
+
    .features {
     display: flex;
     justify-content: center;
+   }
+   
+   .features h2 {
+   margin-bottom: 60px;
+   }
+
+   .features article {
+    width: 63%;
+    margin: 30px 0;
    }
 
    .features .features-items {
@@ -152,11 +197,25 @@ textarea {
    flex-flow: row wrap;
    }
 
+   .features p {
+    margin: 0;
+   }
+
    /*Reviews*/
+
    .review {
    display: flex;
    justify-content: center;
    }
+
+   .review h2 {
+
+   }
+
+   .review h3 {
+   width: 55%;
+   }
+
    /*about page*/
    .mission {
    display: flex;
@@ -166,6 +225,10 @@ textarea {
    .contact-section {
    display: flex;
    justify-content: center;
+   }
+
+   .contact-content p {
+    margin: 0;
    }
    /*Faq page*/
 
@@ -179,6 +242,15 @@ textarea {
    justify-content: center;
    align-items: flex-start;
    flex-flow: row wrap;
+   margin: 50px 0 0 0;
+   }
+
+   .faq h2 {
+   margin: 40px;
+   }
+
+   .faq-content {
+   margin-bottom: 50px;
    }
 
 /* 
