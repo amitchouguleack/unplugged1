@@ -225,6 +225,9 @@
   /* Hero Area */
   
   .hero-area {
+    background-image: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }
@@ -273,6 +276,7 @@
   /* Features */
   
   .features {
+    background: url('../img/unplugged-retreat-features.jpg');
     display: flex;
     justify-content: center;
   }
