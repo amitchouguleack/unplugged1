@@ -328,6 +328,23 @@
     display: flex;
     justify-content: center;
   }
+
+  .map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 125%;
+    overflow: hidden;
+    position: relative;
+  }
+
+    .map ifreame {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
   
   .contact-section {
     background-color: #2a423a;
@@ -339,21 +356,9 @@
     margin: 0;
   }
 
-  .map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 125%;
-    overflow: hidden;
-    position: relative;
-
-    .map ifreame {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
+ 
+    
+  
   
   /* ==========================================================================
      FAQ Page
@@ -521,6 +526,15 @@
 
    /* Hero Area */
 
+   .hero-area{
+    min-height: 600px;
+   }
+
+   .hero-area h1 {
+    font-size: 3em;
+    width: 90%;
+   }
+
    /* Aside */
 
    aside .content-wrapper {
@@ -606,6 +620,10 @@
 
    .mission-content p {
     width: 46%;
+   }
+
+   .map figure {
+    padding-bottom: 45.5%;
    }
 
    .contact-section .content-wrapper h2 {
@@ -709,6 +727,10 @@
 
     /*About page*/
 
+    
+    .map figure {
+      padding-bottom: 37.5%;
+    }
     .mission h2, .contact-section .content-wrapper h2 {
       width: 95%;
       font-size: 3em;
