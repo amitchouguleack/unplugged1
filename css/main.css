@@ -106,7 +106,9 @@
      body {
       font-size: 1em;
       font-family: 'Open sans', sans-serif;
+      color: #e2e3ed;
       text-align: left;
+      background-color: #202322;
      }
      
      ul, ol {
@@ -126,13 +128,14 @@
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       font-size: 1.875em;
+      margin: 0;
      }
 
      h3, h4 {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
-      margin: 20px 0;
       font-size: 1.125em;
+      margin: 20px 0;
      }
 
      p {
@@ -202,11 +205,12 @@
   }
   
   footer {
+    background-color: #202322;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #202322;
+    
   }
 
   footer p {
@@ -305,6 +309,8 @@
   
   .features {
     background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }
@@ -345,6 +351,7 @@
 
   .reviews h2 {
    margin-bottom: 40px;
+   line-height: 1;
   }
 
   .reviews h3 {
@@ -404,15 +411,17 @@
   }
   
   .faq .content-wrapper {
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
+   
   }
 
   .faq h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
 
   .faq-content {
@@ -565,7 +574,7 @@
 
    .hero-area h1 {
     font-size: 3em;
-    width: 90%;
+    
    }
 
    /* Aside */
@@ -584,6 +593,14 @@
 
    /* Features */
 
+   .features h2 {
+    margin-bottom: 20px;
+   }
+
+   .features .features-items {
+    align-items: flex-start;
+   }
+
    .features article {
      display: flex;
      align-items: center;
@@ -592,8 +609,12 @@
    }
 
    .features .features-item-description {
-     width: 50%;
+     width: 62%;
    }
+
+    .features i {
+      margin-bottom: 30px;
+    }
 
    /* Reviews */
    .reviews article {
@@ -604,7 +625,8 @@
    .reviews h2 {
     width: 85%;
    }
-
+   
+   .reviews aticle figure,
    .reviews article div {
     width: 49%;
    }
@@ -636,6 +658,11 @@
 
    footer p {
     line-height: 1.285;
+   }
+
+   footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
    }
 
    footer .copyright {
