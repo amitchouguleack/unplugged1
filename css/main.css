@@ -181,12 +181,14 @@ header figure {
 }
 
 /* --- LOGO SIZE START --- */
-/* This rule applies to your logo image within the header figure on mobile */
-header figure img {
-  max-width: 200px; /* Consistent size for mobile and desktop */
+/* This specific rule targets your logo image to ensure consistent sizing */
+header .logo a img {
+  max-width: 150px; /* Set to 150px, which matches the size from your FAQ page screenshot */
   height: auto; /* Ensures aspect ratio is maintained */
+  display: block; /* Helps with consistent rendering */
 }
 /* --- LOGO SIZE END --- */
+
 
 .header-divider {
   background: #3a3a3a;
@@ -553,9 +555,9 @@ input[type=button] {
   }
 
   /* --- LOGO SIZE START --- */
-  /* This rule applies to your logo image within the header figure on tablet */
-  header figure img {
-    max-width: 200px; /* Changed from 150px to 200px for consistency */
+  /* This specific rule targets your logo image to ensure consistent sizing on tablet */
+  header .logo a img {
+    max-width: 150px; /* Consistent size for tablet */
   }
   /* --- LOGO SIZE END --- */
 
@@ -746,9 +748,9 @@ input[type=button] {
   }
 
   /* --- LOGO SIZE START --- */
-  /* This rule applies to your logo image within the header figure on desktop */
-  header figure img {
-    max-width: 200px; /* Consistent size for desktop */
+  /* This specific rule targets your logo image to ensure consistent sizing on desktop */
+  header .logo a img {
+    max-width: 150px; /* Consistent size for desktop */
   }
   /* --- LOGO SIZE END --- */
 
@@ -812,7 +814,7 @@ input[type=button] {
 
   /* ==========================================================================
     About Page
-    ========================================================================== */
+    ========================================================================= */
   .map figure {
     padding-bottom: 37.5%;
   }
@@ -829,7 +831,7 @@ input[type=button] {
 
   /* ==========================================================================
     FAQ Page
-    ========================================================================== */
+    ========================================================================= */
   .faq h2 {
     width: 100%;
     font-size: 3em;
