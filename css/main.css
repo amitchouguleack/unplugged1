@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-    Base styles: opinionated defaults
-    ========================================================================== */
+   Base styles: opinionated defaults
+   ========================================================================== */
 
 html {
   color: #222;
@@ -83,8 +83,8 @@ textarea {
 }
 
 /* ==========================================================================
-    Browser Upgrade Prompt
-    ========================================================================== */
+   Browser Upgrade Prompt
+   ========================================================================== */
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -94,8 +94,8 @@ textarea {
 }
 
 /* ==========================================================================
-    Author's custom styles
-    ========================================================================== */
+   Author's custom styles
+   ========================================================================== */
 
 /* General Styles */
 html {
@@ -348,11 +348,17 @@ input[type=button] {
 }
 
 /* Reviews */
-
 .reviews {
-  background-color: #2a423a;
+  background-color: #2a423a; /* This background color will now stretch full width */
   display: flex;
   justify-content: center;
+  padding: 50px 0; /* Added vertical padding for spacing */
+}
+
+/* The .content-wrapper inside .reviews will keep your content constrained */
+.reviews .content-wrapper {
+    /* No changes needed here, it will automatically center within the full-width .reviews */
+    margin: 0; /* Reset margin to ensure it's controlled by the parent .reviews padding */
 }
 
 .reviews h2 {
@@ -361,13 +367,13 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 55%;
+  width: 55%; /* This might need adjustment based on how many review texts you have */
   margin: 20px 0;
 }
 
 /* ==========================================================================
-    About Page
-    ========================================================================== */
+   About Page
+   ========================================================================== */
 
 .mission {
   background-color: #527158;
@@ -402,8 +408,8 @@ input[type=button] {
 }
 
 /* ==========================================================================
-    FAQ Page
-    ========================================================================== */
+   FAQ Page
+   ========================================================================== */
 
 .faq {
   background-color: #527158;
@@ -433,8 +439,8 @@ input[type=button] {
 }
 
 /* ==========================================================================
-    Helper classes
-    ========================================================================== */
+   Helper classes
+   ========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -516,10 +522,10 @@ input[type=button] {
 }
 
 /* ==========================================================================
-    EXAMPLE Media Queries for Responsive Design.
-    These examples override the primary ('mobile first') styles.
-    Modify as content requires.
-    ========================================================================== */
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
 
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
@@ -679,8 +685,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-    About Page
-    ========================================================================== */
+   About Page
+   ========================================================================== */
 
   .mission-content {
     display: flex;
@@ -712,8 +718,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-    FAQ Page
-    ========================================================================== */
+   FAQ Page
+   ========================================================================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -813,8 +819,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-    About Page
-    ========================================================================= */
+   About Page
+   ========================================================================= */
   .map figure {
     padding-bottom: 37.5%;
   }
@@ -830,8 +836,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-    FAQ Page
-    ========================================================================= */
+   FAQ Page
+   ========================================================================= */
   .faq h2 {
     width: 100%;
     font-size: 3em;
@@ -845,10 +851,10 @@ input[type=button] {
 }
 
 /* ==========================================================================
-    Print styles.
-    Inlined to avoid the additional HTTP request:
-    https://www.phpied.com/delay-loading-your-print-css/
-    ========================================================================== */
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
 
 @media print {
 
