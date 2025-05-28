@@ -183,7 +183,7 @@ header figure {
 /* --- LOGO SIZE START --- */
 /* This specific rule targets your logo image to ensure consistent sizing */
 header .logo a img {
-  max-width: 150px; /* Set to 150px, which matches the size from your FAQ page screenshot */
+  max-width: 150px !important; /* Forces the logo to be 150px wide, overriding other rules */
   height: auto; /* Ensures aspect ratio is maintained */
   display: block; /* Helps with consistent rendering */
 }
@@ -557,7 +557,7 @@ input[type=button] {
   /* --- LOGO SIZE START --- */
   /* This specific rule targets your logo image to ensure consistent sizing on tablet */
   header .logo a img {
-    max-width: 150px; /* Consistent size for tablet */
+    max-width: 150px !important; /* Consistent size for tablet */
   }
   /* --- LOGO SIZE END --- */
 
@@ -750,7 +750,7 @@ input[type=button] {
   /* --- LOGO SIZE START --- */
   /* This specific rule targets your logo image to ensure consistent sizing on desktop */
   header .logo a img {
-    max-width: 150px; /* Consistent size for desktop */
+    max-width: 150px !important; /* Consistent size for desktop */
   }
   /* --- LOGO SIZE END --- */
 
