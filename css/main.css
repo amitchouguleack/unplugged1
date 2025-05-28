@@ -7,8 +7,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+    Base styles: opinionated defaults
+    ========================================================================== */
 
 html {
   color: #222;
@@ -83,8 +83,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+    Browser Upgrade Prompt
+    ========================================================================== */
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -94,8 +94,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+    Author's custom styles
+    ========================================================================== */
 
 /* General Styles */
 html {
@@ -179,6 +179,14 @@ header .content-wrapper {
 header figure {
   width: 60%;
 }
+
+/* --- LOGO SIZE START --- */
+/* This rule applies to your logo image within the header figure on mobile */
+header figure img {
+  max-width: 200px; /* Consistent size for mobile and desktop */
+  height: auto; /* Ensures aspect ratio is maintained */
+}
+/* --- LOGO SIZE END --- */
 
 .header-divider {
   background: #3a3a3a;
@@ -356,8 +364,8 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   About Page
-   ========================================================================== */
+    About Page
+    ========================================================================== */
 
 .mission {
   background-color: #527158;
@@ -392,8 +400,8 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+    FAQ Page
+    ========================================================================== */
 
 .faq {
   background-color: #527158;
@@ -423,8 +431,8 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+    Helper classes
+    ========================================================================== */
 
 /*
  * Hide visually and from screen readers
@@ -439,8 +447,8 @@ input[type=button] {
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
  * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ * causes content to wrap 1 word per line:
+ * https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
 .visuallyhidden {
@@ -486,11 +494,11 @@ input[type=button] {
  *
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
+ * `contenteditable` attribute is included anywhere else in the document.
+ * Otherwise it causes space to appear at the top and bottom of elements
+ * that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ * `:before` to contain the top-margins of child elements.
  */
 
 .clearfix:before,
@@ -506,10 +514,10 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+    ========================================================================== */
 
 @media only screen and (min-width:768px) {
   /*Tablet styles here*/
@@ -543,6 +551,13 @@ input[type=button] {
   header figure {
     width: 30%;
   }
+
+  /* --- LOGO SIZE START --- */
+  /* This rule applies to your logo image within the header figure on tablet */
+  header figure img {
+    max-width: 200px; /* Changed from 150px to 200px for consistency */
+  }
+  /* --- LOGO SIZE END --- */
 
   header nav {
     width: 20%;
@@ -604,6 +619,7 @@ input[type=button] {
   }
 
   .features i {
+    font-size: 3.75em;
     margin-bottom: 30px;
   }
 
@@ -661,8 +677,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-   About Page
-   ========================================================================== */
+    About Page
+    ========================================================================== */
 
   .mission-content {
     display: flex;
@@ -694,8 +710,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
+    FAQ Page
+    ========================================================================== */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -728,6 +744,13 @@ input[type=button] {
   header {
     padding: 15px 0;
   }
+
+  /* --- LOGO SIZE START --- */
+  /* This rule applies to your logo image within the header figure on desktop */
+  header figure img {
+    max-width: 200px; /* Consistent size for desktop */
+  }
+  /* --- LOGO SIZE END --- */
 
   h2 {
     font-size: 2.25em;
@@ -788,8 +811,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-  About Page
-  ========================================================================== */
+    About Page
+    ========================================================================== */
   .map figure {
     padding-bottom: 37.5%;
   }
@@ -805,8 +828,8 @@ input[type=button] {
   }
 
   /* ==========================================================================
-  FAQ Page
-  ========================================================================== */
+    FAQ Page
+    ========================================================================== */
   .faq h2 {
     width: 100%;
     font-size: 3em;
@@ -820,10 +843,10 @@ input[type=button] {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+    Print styles.
+    Inlined to avoid the additional HTTP request:
+    https://www.phpied.com/delay-loading-your-print-css/
+    ========================================================================== */
 
 @media print {
 
@@ -852,9 +875,9 @@ input[type=button] {
   }
 
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -871,9 +894,9 @@ input[type=button] {
   }
 
   /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
   thead {
     display: table-header-group;
   }
